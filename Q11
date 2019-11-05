@@ -1,0 +1,41 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	double aot = 0, aoc = 0, aor = 0,radius,height,width,base ;
+	int choice;
+	cout << "1.calculate of area of a circle" << endl;;
+	cout << "2.calculate of area of a rectangle" << endl;;
+	cout << "3.calculate of area of a triangle" << endl;;
+	cout << "4.quit" << endl;;
+	cin >> choice;
+
+	if (choice == 1)
+	{
+		cout << "plz enter radius of circle\n";
+		cin >> radius;
+
+		aoc = 3.142 * 2 * radius;
+		cout << "area of area of a circle :" << aoc;
+	}
+	else if (choice == 2)
+	{
+		cout << "plz enter height and width\n";
+		cin >> height >> width;
+		aor = height * width;
+
+		cout << " area of a rectangle :" << aor;
+	}
+	else if (choice == 3)
+	{
+		cout << "plz enter base and height\n";
+		cin >> base >> height;
+		aot = 0.5*base*height;
+		cout << "area of a triangle :" << aot;
+	}
+	else if (choice == 4) {
+	
+	}
+	return 0;
+}
